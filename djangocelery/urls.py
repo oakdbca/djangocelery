@@ -18,9 +18,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from test_tasks.views import test_tasks
+from test_tasks.views import home, test_without_task_queue, test_with_task_queue
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("test_tasks/", test_tasks),
+    path("", home),
+    path("test-without-task-queue/", test_without_task_queue),
+    path("test-with-task-queue/", test_with_task_queue),
 ]

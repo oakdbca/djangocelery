@@ -11,7 +11,6 @@ def my_task():
     return
 
 
-@shared_task
 def mock_email_send():
     # Wait for one second
     sleep(1)
@@ -24,4 +23,5 @@ def mock_long_gis_query():
     # Wait for 10 seconds
     sleep(10)
     print("Mock long GIS query completed")
+    mock_email_send()
     return
