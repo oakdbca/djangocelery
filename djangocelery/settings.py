@@ -131,7 +131,7 @@ CELERY_RESULT_BACKEND = "redis://redis:6379/0"  # or your result backend
 CELERY_ACCEPT_CONTENT = ["json"]
 CELERY_TASK_SERIALIZER = "json"
 CELERY_RESULT_SERIALIZER = "json"
-CELERY_TIMEZONE = "UTC"  # or your timezone
+CELERY_TIMEZONE = "Australia/Perth"
 
 # For django-celery-beat
 CELERY_BEAT_SCHEDULER = "django_celery_beat.schedulers:DatabaseScheduler"
